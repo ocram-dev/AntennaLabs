@@ -7,15 +7,15 @@ function d = Directivity(B0,M,N,F)
 % Balanis, Constantine A., Antenna Theory Analysis and Design (third edition), 2005 
 
 
-soma = 0;
+sum = 0;
 
 for j=1:M %number of cycles M
     for i=1:N %number of cycles N
-        soma = (soma + F(i*pi/N, 2*j*pi/M) * sin(i*pi/N)); %aplicação do method 2-43 pag 61
+        sum = (sum + F(i*pi/N, 2*j*pi/M) * sin(i*pi/N)); %aplicaÃ§Ã£o do method 2-43 pag 61
     end
 end
 
-prad = soma * B0 * (pi/N) * (2*pi/M);
+prad = sum * B0 * (pi/N) * (2*pi/M);
 
 d = (4*pi)/prad; %returns d
 
