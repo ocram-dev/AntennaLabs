@@ -11,7 +11,7 @@ sum = 0;
 
 for j=1:M %number of cycles M
     for i=1:N %number of cycles N
-        sum = (sum + F(i*pi/N, 2*j*pi/M) * sin(i*pi/N)); %aplicação do method 2-43 pag 61
+        sum = (sum + F(i*pi/N, 2*j*pi/M) * sin(i*pi/N)); % method 2-43 pag 61
     end
 end
 
